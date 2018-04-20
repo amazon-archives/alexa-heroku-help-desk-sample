@@ -1,0 +1,20 @@
+{
+  "name": "Alexa Help Desk Sample",
+  "description": "A Heroku and Heroku Connect based skill to interact with Salesforce over Alexa",
+  "repository": "https://github.com/alexa/alexa-heroku-help-desk-sample",
+  "keywords": ["alexa", "salesforce", "alexa-app", "alexa-for-business"],
+  "env": {
+    "SFDC_INSTANCE_URL": {
+      "description": "Instance URL for your Salesforce data. This should look like https://na50.salesforce.com or https://brave-moose-406615-dev-ed.my.salesforce.com. If you don't have it at this time, you can put in temporary values now and fill it in later via your Settings -> Config Variables.",
+      "required": true
+    },
+    "DEBUG_ENABLED": {
+      "description": "Enables extra debug logging in the skill.",
+      "value": "true",
+      "required": false
+    }
+  },
+  "addons": ["heroku-postgresql", "herokuconnect:demo"],
+  "success_url": "/"
+}
+

@@ -1,0 +1,22 @@
+{
+  "name": "alexa-heroku-help-desk-sample",
+  "version": "1.0.0",
+  "description": "A Heroku and Heroku Connect based Alexa skill to interact with Salesforce",
+  "main": "alexa.js",
+  "repository": "alexa-heroku-help-desk-sample",
+  "license": "MIT",
+  "scripts": {
+    "start": "node alexa.js"
+  },
+  "dependencies": {
+    "alexa-app": "^4.2.1",
+    "aws-sdk": "^2.205.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nforce": "^1.10.0",
+    "pg": "^4.5.7"
+  },
+  "engines": {
+    "node": "8.4.0"
+  }
+}

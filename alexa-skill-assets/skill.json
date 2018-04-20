@@ -1,0 +1,53 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "This is a sample skill where Alexa serves as your help desk.",
+          "examplePhrases": [
+            "Alexa, ask help desk to create a ticket.",
+            "Alexa, open help desk.",
+            "What are my open tickets?"
+          ],
+          "keywords": [],
+          "name": "Help Desk",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/ff9d/1079acfa7048430abb4a77cc020ed32b/APP_ICON?versionId=oaqe68Wz0R4bABDN2s4.vRhDZDo89O86&AWSAccessKeyId=AKIAI3X6PUXD7CU5F5BQ&Expires=1522883512&Signature=OBTUnwAoa0gKKBZ3x4Q0BMGML%2BM%3D",
+          "description": "This skill supports features that a help desk may provide for you by accessing your Salesforce data. Create a ticket and also get updates for any tickets you've created.",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/e1bf/e34c69afb6e74cd784c77807c8a2990c/APP_ICON_LARGE?versionId=4jdCzm7ClD6frgMkVoxEYgYYkuPWO02I&AWSAccessKeyId=AKIAI3X6PUXD7CU5F5BQ&Expires=1522883512&Signature=5cxH%2B3DW3HNuRjYtm3QSqtTtUQA%3D"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "This skill requires connection to a Salesforce instance.",
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionMode": "PRIVATE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sslCertificateType": "Wildcard",
+          "uri": "https://<Your App Here>.herokuapp.com/skill"
+        },
+        "interfaces": [
+          {
+            "type": "RENDER_TEMPLATE"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://aws.amazon.com/service-terms/",
+          "privacyPolicyUrl": "https://aws.amazon.com/privacy/"
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

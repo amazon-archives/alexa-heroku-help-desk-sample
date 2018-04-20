@@ -1,0 +1,55 @@
+{
+  "mappings": [
+    {
+      "object_name": "Case",
+      "config": {
+        "indexes": {
+          "External_Case_ID__c": {
+            "unique": true
+          },
+          "LastModifiedDate": {
+            "unique": false
+          },
+          "SystemModstamp": {
+            "unique": false
+          },
+          "Id": {
+            "unique": true
+          }
+        },
+        "sf_max_daily_api_calls": 30000,
+        "access": "read_write",
+        "upsert_field": "External_Case_ID__c",
+        "applied_at": "2018-03-08T02:49:25.003786Z",
+        "sf_polling_seconds": 600,
+        "sf_notify_enabled": true,
+        "fields": {
+          "Priority": {},
+          "Reason": {},
+          "Origin": {},
+          "AccountId": {},
+          "SuppliedName": {},
+          "AssetId": {},
+          "Subject": {},
+          "External_Case_ID__c": {},
+          "LastModifiedDate": {},
+          "OwnerId": {},
+          "IsDeleted": {},
+          "SystemModstamp": {},
+          "SuppliedPhone": {},
+          "Status": {},
+          "CreatedDate": {},
+          "IsClosed": {},
+          "CaseNumber": {},
+          "CreatedById": {},
+          "Type": {},
+          "Id": {},
+          "ContactId": {},
+          "Description": {},
+          "SuppliedEmail": {}
+        }
+      }
+    }
+  ],
+  "version": 1
+}

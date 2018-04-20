@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body style="font-family: 'Arial'"">
+    <main>
+      <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
+      <div>
+        <h1>You've deployed your Alexa skill powered by Heroku!</h1>
+        <p>Your next step is to configure your Heroku Connect settings.</p>
+        <p>Make sure to save your application name, <span style="font-weight: bold" id="appName"></span>, for use in Part 3 of the setup.</p>
+        <p><a href="https://github.com/alexa/alexa-heroku-help-desk-sample/blob/master/instructions/2-heroku.md">Return to Github instructions</a></p>
+      </div>
+    </main>
+  </body>
+  <script>
+    document.getElementById("appName").innerHTML = window.location.host.split('.')[0];
+  </script>
+</html>

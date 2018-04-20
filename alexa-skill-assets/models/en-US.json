@@ -1,0 +1,204 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "help desk",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CreateTicket",
+          "slots": [
+            {
+              "name": "equipment",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{equipment}",
+                "No it's the {equipment}",
+                "The {equipment} isn't working",
+                "The {equipment} is broken",
+                "It's the {equipment}"
+              ]
+            }
+          ],
+          "samples": [
+            "Create a ticket for the {equipment}",
+            "Create a ticket for the {equipment} not working",
+            "Log a ticket",
+            "Create a ticket",
+            "{equipment} isn't working",
+            "The {equipment} is broken",
+            "I want to create a ticket for {equipment} not working",
+            "I want to create a ticket for {equipment}"
+          ]
+        },
+        {
+          "name": "GetTicket",
+          "samples": [
+            "what tickets have I created",
+            "what are my tickets",
+            "get my open tickets",
+            "get my tickets",
+            "get my ticket",
+            "get my cases",
+            "list my tickets",
+            "list my cases"
+          ]
+        },
+        {
+          "name": "AMAZON.MoreIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateSettingsIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageUpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PageDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollRightIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollDownIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollLeftIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ScrollUpIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "phone"
+              }
+            },
+            {
+              "name": {
+                "value": "monitor"
+              }
+            },
+            {
+              "name": {
+                "value": "keyboard"
+              }
+            },
+            {
+              "name": {
+                "value": "printer"
+              }
+            },
+            {
+              "name": {
+                "value": "mac"
+              }
+            },
+            {
+              "name": {
+                "value": "computer"
+              }
+            },
+            {
+              "name": {
+                "value": "laptop"
+              }
+            },
+            {
+              "name": {
+                "value": "desk"
+              }
+            },
+            {
+              "name": {
+                "value": "projector"
+              }
+            },
+            {
+              "name": {
+                "value": "chair"
+              }
+            },
+            {
+              "name": {
+                "value": "copier"
+              }
+            }
+          ],
+          "name": "AMAZON.SearchQuery"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CreateTicket",
+          "confirmationRequired": false,
+          "slots": [
+            {
+              "name": "equipment",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.958821295146.934594592961"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.958821295146.934594592961",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What are you having trouble with?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What's not working?"
+          },
+          {
+            "type": "PlainText",
+            "value": "What seems to be broken?"
+          }
+        ]
+      }
+    ]
+  }
+}
