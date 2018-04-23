@@ -4,7 +4,7 @@
 
 ## Part 5: Testing
 
-Now that you completed most of the setup, let's make sure everything is working. You start by validating the account linking flow, then interact with the skill to create a voice code and access Salesforce data.
+Now that you completed most of the setup, let's make sure everything is working. We'll show you first how to test using the command line, then validate the account linking flow, finally interact with the skill to access Salesforce data.
 
 ### Simulate
 
