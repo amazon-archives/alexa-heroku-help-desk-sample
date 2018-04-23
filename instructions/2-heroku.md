@@ -17,11 +17,12 @@ Make sure to save your full application path, as you'll need in Part 3.
 1. Go to your [Heroku Dashboard](https://dashboard.heroku.com/) and select the application you just deployed. Alternatively, from the Heroku deployment page, click **Manage App**.
 2. Under Installed add-ons, click on **Heroku Connect**.
 3. Click **Setup Connection**. This will detect the Heroku Postgres add-on details and configure Heroku Connect with them.
-4. Click **Next** on the Provision Connection screen.
-5. Click **Authorize**.
-6. Log in to your Salesforce account you just created in Step 1.
-7. Click **Allow**.
-8. You should now be on the Heroku Connect Overview page showing your connection details. The next step will be to add mappings to your Salesforce objects.
+4. Click on the highlighted row that has **DATABASE_URL** to select this as your desired Postgres database.
+5. Click **Next** on the Provision Connection screen.
+6. Click **Authorize**.
+7. Log in to your Salesforce account you just created in Step 1.
+8. Click **Allow**.
+9. You should now be on the Heroku Connect Overview page showing your connection details. The next step will be to add mappings to your Salesforce objects.
 
 ### Configure Heroku Connect Mapping
 
