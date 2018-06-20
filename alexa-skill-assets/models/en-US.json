@@ -98,68 +98,6 @@
           "name": "AMAZON.ScrollUpIntent",
           "samples": []
         }
-      ],
-      "types": [
-        {
-          "values": [
-            {
-              "name": {
-                "value": "phone"
-              }
-            },
-            {
-              "name": {
-                "value": "monitor"
-              }
-            },
-            {
-              "name": {
-                "value": "keyboard"
-              }
-            },
-            {
-              "name": {
-                "value": "printer"
-              }
-            },
-            {
-              "name": {
-                "value": "mac"
-              }
-            },
-            {
-              "name": {
-                "value": "computer"
-              }
-            },
-            {
-              "name": {
-                "value": "laptop"
-              }
-            },
-            {
-              "name": {
-                "value": "desk"
-              }
-            },
-            {
-              "name": {
-                "value": "projector"
-              }
-            },
-            {
-              "name": {
-                "value": "chair"
-              }
-            },
-            {
-              "name": {
-                "value": "copier"
-              }
-            }
-          ],
-          "name": "AMAZON.SearchQuery"
-        }
       ]
     },
     "dialog": {
